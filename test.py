@@ -22,7 +22,7 @@ cn = c()
 query = cn.select(Computer)
 servername = input("Connection Established Successfully"+"\n Please Enter The Host Name:\n")
 
-#this matches the server()
+#this matches the host's name (either full name or partial match both works well)
 query = query.where("name:"+"*"+servername+"*")
 
 for comp in query:
